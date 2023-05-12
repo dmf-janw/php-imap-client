@@ -558,10 +558,10 @@ class IncomingMessage
             throw new ImapClientException('What to use id or uid?');
         }
         $sequence = null;
-        $options = null;
+        $options = 0;
         if (isset($this->id) && !isset($this->uid)) {
             $sequence = $this->id;
-            $options = null;
+            $options = 0;
         }
         if (!isset($this->id) && isset($this->uid)) {
             $sequence = $this->uid;
@@ -765,7 +765,7 @@ class IncomingMessage
             'debug' => $this->debug,
         );
     }
-    
+
     /**
      * Get the id property of the message
      *
@@ -773,6 +773,6 @@ class IncomingMessage
      */
     public function getID()
     {
-        return $this->id;   
+        return $this->id;
     }
 }
