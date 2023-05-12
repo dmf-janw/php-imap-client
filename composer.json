@@ -1,9 +1,9 @@
 {
-  "name": "ssilence/php-imap-client",
+  "name": "dmf-janw/php-imap-client",
   "type": "library",
   "description": "Php imap client",
   "keywords": ["php", "imap", "client"],
-  "homepage": "https://github.com/SSilence/php-imap-client",
+  "homepage": "https://github.com/dmf-janw/php-imap-client",
   "license": "MIT",
   "authors": [
       {
